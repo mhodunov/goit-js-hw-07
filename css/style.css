@@ -34,3 +34,18 @@ img {
 #validation-input.invalid {
 	border-color: #f44336;
 }
+
+#boxes {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #efefef;
+	margin-top: 10px;
+}
+
+#boxes > div {
+	margin: 10px;
+	border: solid 1px black;
+}
