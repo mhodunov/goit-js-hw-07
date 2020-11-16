@@ -14,9 +14,9 @@ const createBoxes = boxQty => {
 
   for (let i = 0; i < boxQty; i++) {
     let box = document.createElement("div");
-    box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 257)}, 
-    ${Math.floor(Math.random() * 257)}, 
-    ${Math.floor(Math.random() * 257)})`;
+    box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, 
+    ${Math.floor(Math.random() * 256)}, 
+    ${Math.floor(Math.random() * 256)})`;
     box.style.width = `${width}px`;
     box.style.height = `${height}px`;
 
