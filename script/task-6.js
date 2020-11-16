@@ -3,12 +3,12 @@ const validLength = +inputValid.attributes["data-length"].value
 
 const fieldValidation = () => {
 
-  if(event.target.value.length == validLength) {
+  if(inputValid.value.length == validLength) {
     inputValid.classList.add('valid');
     inputValid.classList.remove('invalid');
   }
     
-  else if(event.target.value.length > 0) {
+  else if(inputValid.value.length > 0) {
     inputValid.classList.add('invalid');
     inputValid.classList.remove('valid');
   }
