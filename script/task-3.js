@@ -17,16 +17,15 @@ const images = [
 ];
 
 const gallery = document.querySelector('#gallery');
-const galleryItems = [];
 
-images.forEach(image => {
+const galleryItems = images.map(image => {
   const galleryElement = document.createElement('li');
   const galleryImage = document.createElement('img');
   galleryImage.src = image.url;
   galleryImage.alt = image.alt;
   galleryElement.appendChild(galleryImage);
   galleryElement.classList.add('gallery-item');
-  galleryItems.push(galleryElement);
+  return galleryElement;
 });
 
 gallery.append(...galleryItems);

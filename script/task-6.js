@@ -3,7 +3,7 @@ const validLength = +inputValid.attributes["data-length"].value
 
 const fieldValidation = () => {
 
-  if(inputValid.value.length == validLength) {
+  if(inputValid.value.length === validLength) {
     inputValid.classList.add('valid');
     inputValid.classList.remove('invalid');
   }
